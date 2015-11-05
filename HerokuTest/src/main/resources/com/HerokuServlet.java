@@ -15,30 +15,23 @@ public class HerokuServlet extends HttpServlet {
     /**
      * @see HttpServlet#HttpServlet()
      */
-
-    public void init() throws ServletException
-    {
-        // Do required initialization
-        message = "Hello World";
+    public HerokuServlet() {
+        super();
+        // TODO Auto-generated constructor stub
     }
+
 	/**
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		
-	    // Set response content type
-	      response.setContentType("text/html");
-
-	      // Actual logic goes here.
-	      PrintWriter out = response.getWriter();
-	      out.println("<h1>" + message + "</h1>");
-		
 	}
 
-	  public void destroy()
-	  {
-	      // do nothing.
-	  }
+	/**
+	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+	}
 
 }
